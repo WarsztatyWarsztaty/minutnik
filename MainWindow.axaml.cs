@@ -94,6 +94,12 @@ public partial class MainWindow : Window
         _isBreakMode = false;
         _completedCycles = 0;
         _remainingSeconds = GetWorkDurationSeconds();
+        _history.Clear();
+
+        if (HistoryList != null)
+        {
+            HistoryList.ItemsSource = null;
+        }
 
         if (StatusMessageTextBlock != null)
         {
