@@ -92,6 +92,7 @@
                                Foreground="#38bdf8"
                                HorizontalAlignment="Center" />
                 </StackPanel>
+                <ListBox Name="HistoryList" />
             </Grid>
         </Border>
 

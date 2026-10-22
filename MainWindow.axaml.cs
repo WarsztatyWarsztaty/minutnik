@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Media;
@@ -13,6 +14,7 @@ public partial class MainWindow : Window
     private bool _isBreakMode = false;
     private int _remainingSeconds;
     private int _completedCycles = 0;
+    private readonly List<string> _history = new();
 
     public MainWindow()
     {
@@ -130,6 +132,8 @@ public partial class MainWindow : Window
             {
                 // Work session ended -> cycle count increments, break starts automatically
                 _completedCycles++;
+                _history.Add($"{DateTime.Now:HH:mm} — cykl {_completedCycles}");
+HistoryList.ItemsSource = _history.ToArray();
                 _isBreakMode = true;
                 _remainingSeconds = GetBreakDurationSeconds();
 
