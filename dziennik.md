@@ -1,0 +1,1 @@
+Wśród pięciu warunków „Kiedy…, to…” trzy mogłem sprawdzić od razu po uruchomieniu aplikacji (Start, Pauza i Reset), a dwa pozostałe wymagały oczekiwania na zakończenie pracy i przerwy, ponieważ dotyczą automatycznego przełączania faz minutnika.
