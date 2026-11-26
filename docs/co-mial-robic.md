@@ -19,3 +19,10 @@ Kiedy zakończy się przerwa, to minutnik przygotuje kolejny cykl.
 Czy reset powinien zerować licznik cykli?
 Czy historia cykli powinna być zachowywana po zamknięciu aplikacji?
 Czy użytkownik powinien mieć możliwość zmiany wszystkich parametrów minutnika?
+
+Program domyślnie ustawia czas pracy na 25 minut, a czas przerwy na 5 minut.
+Program pozwala użytkownikowi zmieniać długość czasu pracy i przerwy w oknie.
+Program wyświetla czas w formacie mm:ss.
+Program posiada jeden przycisk Start/Pauza oraz osobny przycisk Reset.
+Interfejs programu jest w języku polskim, a nazwy w kodzie w języku angielskim.
+Program nie korzysta z dodatkowych bibliotek.
